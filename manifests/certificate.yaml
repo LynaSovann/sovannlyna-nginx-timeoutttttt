@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: sovannlyna-nginx-timeoutttttt-certificate
+  namespace: sovannlyna-nginx-timeoutttttt
+spec:
+  secretName: sovannlyna-nginx-timeoutttttt-secret-tls
+  commonName: sovannlyna-nginx-timeoutttttt.assessify.org
+  dnsNames:
+  - sovannlyna-nginx-timeoutttttt.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
