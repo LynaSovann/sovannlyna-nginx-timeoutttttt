@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sovannlyna-nginx-timeoutttttt-deployment
+  labels:
+    app: sovannlyna-nginx-timeoutttttt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sovannlyna-nginx-timeoutttttt
+  template:
+    metadata:
+      labels:
+        app: sovannlyna-nginx-timeoutttttt
+    spec:
+      containers:
+        - name: sovannlyna-nginx-timeoutttttt-container
+          image: pipejet/sovannlyna-nginx-timeoutttttt:0
+          ports:
+            - containerPort: 3000
