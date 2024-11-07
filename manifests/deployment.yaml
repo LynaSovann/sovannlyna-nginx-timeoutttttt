@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: sovannlyna-nginx-timeoutttttt-container
-          image: pipejet/sovannlyna-nginx-timeoutttttt:0
+          image: pipejet/sovannlyna-nginx-timeoutttttt:1
           ports:
             - containerPort: 3000
